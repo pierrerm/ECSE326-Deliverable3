@@ -1,53 +1,162 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fm="http:///fm.ecore" xmlns:grl="http:///grl.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="Romain-PC" created="November 8, 2018 2:16:37 PM EST" modified="November 8, 2018 2:16:37 PM EST" specVersion="4" urnVersion="1.27" nextGlobalID="168">
+<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fm="http:///fm.ecore" xmlns:grl="http:///grl.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="Romain-PC" created="November 8, 2018 2:16:37 PM EST" modified="November 9, 2018 10:51:38 AM EST" specVersion="8" urnVersion="1.27" nextGlobalID="168">
   <ucmspec>
     <scenarioGroups name="ScenarioGroup7" id="7">
       <scenarios name="ScenarioDef8" id="8"/>
     </scenarioGroups>
   </ucmspec>
   <grlspec>
-    <intElements xsi:type="fm:Feature" name="Cash" id="39" linksSrc="67" type="Task" refs="40"/>
-    <intElements xsi:type="fm:Feature" name="Credit" id="43" linksSrc="68" type="Task" refs="44"/>
-    <intElements xsi:type="fm:Feature" name="Debit" id="45" linksSrc="74" type="Task" refs="46"/>
-    <intElements xsi:type="fm:Feature" name="Mobile Device" id="47" linksSrc="70" type="Task" refs="48"/>
-    <intElements xsi:type="fm:Feature" name="Pay for Food" id="49" linksDest="67 68 74 70" linksSrc="76" type="Task" decompositionType="Or" refs="50"/>
-    <intElements xsi:type="fm:Feature" name="Eating Preference" id="51" linksDest="71 75" linksSrc="77" type="Task" decompositionType="Xor" refs="52"/>
-    <intElements xsi:type="fm:Feature" name="Stay to Eat" id="53" linksSrc="71" type="Task" refs="54"/>
-    <intElements xsi:type="fm:Feature" name="Take food to go" id="55" linksSrc="75" type="Task" refs="56"/>
-    <intElements xsi:type="fm:Feature" name="Get Food" id="57" linksDest="76 77 86 151" linksSrc="158" type="Task" refs="58"/>
-    <intElements xsi:type="fm:Feature" name="Take Train" id="59" linksDest="149 154 164 167" linksSrc="156" type="Task" decompositionType="Or" refs="60"/>
-    <intElements xsi:type="fm:Feature" name="Shopping" id="61" linksDest="155" linksSrc="157" type="Task" refs="62"/>
-    <intElements xsi:type="fm:Feature" name="Actions" id="63" linksDest="156 157 158" type="Task" refs="64"/>
-    <intElements xsi:type="fm:Feature" name="Meal Time" id="79" linksDest="112 97 98 117" linksSrc="86" type="Task" decompositionType="Xor" refs="80"/>
-    <intElements xsi:type="fm:Feature" name="Meal Type" id="81" linksDest="111 109 110" linksSrc="151" type="Task" decompositionType="Or" refs="82"/>
-    <intElements xsi:type="fm:Feature" name="Breakfast" id="88" linksSrc="98" type="Task" refs="89"/>
-    <intElements xsi:type="fm:Feature" name="Lunch" id="90" linksSrc="97" type="Task" refs="91"/>
-    <intElements xsi:type="fm:Feature" name="Dinner" id="92" linksSrc="112" type="Task" refs="93"/>
-    <intElements xsi:type="fm:Feature" name="Fast Food" id="100" linksSrc="111" type="Task" refs="101"/>
-    <intElements xsi:type="fm:Feature" name="Cooked Food" id="102" linksSrc="109" type="Task" refs="103"/>
-    <intElements xsi:type="fm:Feature" name="Drink" id="104" linksSrc="110" type="Task" refs="105"/>
-    <intElements xsi:type="fm:Feature" name="Brunch" id="113" linksSrc="117" type="Task" refs="114"/>
-    <intElements xsi:type="fm:Feature" name="Feature119" id="119" type="Task" refs="120"/>
-    <intElements xsi:type="fm:Feature" name="Pay for Ticket" id="121" linksDest="139 153 141" linksSrc="149" type="Task" decompositionType="Xor" refs="122"/>
-    <intElements xsi:type="fm:Feature" name="Get Train Info" id="123" linksDest="143 148 145" linksSrc="154" type="Task" decompositionType="Or" refs="124"/>
-    <intElements xsi:type="fm:Feature" name="Online" id="125" linksSrc="139" type="Task" refs="126"/>
-    <intElements xsi:type="fm:Feature" name="At Kiosk" id="127" linksSrc="153" type="Task" refs="128"/>
-    <intElements xsi:type="fm:Feature" name="Machine" id="129" linksSrc="141" type="Task" refs="130"/>
-    <intElements xsi:type="fm:Feature" name="Info Desk" id="131" linksSrc="143" type="Task" refs="132"/>
-    <intElements xsi:type="fm:Feature" name="Monitor" id="133" linksSrc="148" type="Task" refs="134"/>
-    <intElements xsi:type="fm:Feature" name="ViaRail App" id="135" linksSrc="145" type="Task" refs="136"/>
-    <intElements xsi:type="fm:Feature" name="Pay for Items" id="137" linksSrc="155" type="Task" refs="138"/>
-    <intElements xsi:type="fm:Feature" name="ViaRail" id="160" linksSrc="167" type="Task" refs="161"/>
-    <intElements xsi:type="fm:Feature" name="Metro" id="162" linksSrc="164" type="Task" refs="163"/>
+    <intElements xsi:type="fm:Feature" name="Cash" id="39" linksSrc="67" type="Task" refs="40">
+      <metadata name="_numEval" value="0"/>
+      <metadata name="_qualEval" value="None"/>
+    </intElements>
+    <intElements xsi:type="fm:Feature" name="Credit" id="43" linksSrc="68" type="Task" refs="44">
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+    </intElements>
+    <intElements xsi:type="fm:Feature" name="Debit" id="45" linksSrc="74" type="Task" refs="46">
+      <metadata name="_numEval" value="0"/>
+      <metadata name="_qualEval" value="None"/>
+    </intElements>
+    <intElements xsi:type="fm:Feature" name="Mobile Device" id="47" linksSrc="70" type="Task" refs="48">
+      <metadata name="_numEval" value="0"/>
+      <metadata name="_qualEval" value="None"/>
+    </intElements>
+    <intElements xsi:type="fm:Feature" name="Pay for Food" id="49" linksDest="67 68 74 70" linksSrc="76" type="Task" decompositionType="Or" refs="50">
+      <metadata name="_addAggregate" value="disable"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+    </intElements>
+    <intElements xsi:type="fm:Feature" name="Eating Preference" id="51" linksDest="71 75" linksSrc="77" type="Task" decompositionType="Xor" refs="52">
+      <metadata name="_addAggregate" value="disable"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+    </intElements>
+    <intElements xsi:type="fm:Feature" name="Stay to Eat" id="53" linksSrc="71" type="Task" refs="54">
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+    </intElements>
+    <intElements xsi:type="fm:Feature" name="Take food to go" id="55" linksSrc="75" type="Task" refs="56">
+      <metadata name="_numEval" value="0"/>
+      <metadata name="_qualEval" value="None"/>
+    </intElements>
+    <intElements xsi:type="fm:Feature" name="Get Food" id="57" linksDest="76 77 86 151" linksSrc="158" type="Task" refs="58">
+      <metadata name="_addAggregate" value="disable"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+    </intElements>
+    <intElements xsi:type="fm:Feature" name="Take Train" id="59" linksDest="149 154 164 167" linksSrc="156" type="Task" decompositionType="Or" refs="60">
+      <metadata name="_addAggregate" value="disable"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+    </intElements>
+    <intElements xsi:type="fm:Feature" name="Shopping" id="61" linksDest="155" linksSrc="157" type="Task" refs="62">
+      <metadata name="_addAggregate" value="disable"/>
+      <metadata name="_numEval" value="0"/>
+      <metadata name="_qualEval" value="None"/>
+    </intElements>
+    <intElements xsi:type="fm:Feature" name="Actions" id="63" linksDest="156 157 158" type="Task" refs="64">
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+    </intElements>
+    <intElements xsi:type="fm:Feature" name="Meal Time" id="79" linksDest="112 97 98 117" linksSrc="86" type="Task" decompositionType="Xor" refs="80">
+      <metadata name="_addAggregate" value="disable"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+    </intElements>
+    <intElements xsi:type="fm:Feature" name="Meal Type" id="81" linksDest="111 109 110" linksSrc="151" type="Task" decompositionType="Or" refs="82">
+      <metadata name="_addAggregate" value="disable"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+    </intElements>
+    <intElements xsi:type="fm:Feature" name="Breakfast" id="88" linksSrc="98" type="Task" refs="89">
+      <metadata name="_numEval" value="0"/>
+      <metadata name="_qualEval" value="None"/>
+    </intElements>
+    <intElements xsi:type="fm:Feature" name="Lunch" id="90" linksSrc="97" type="Task" refs="91">
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+    </intElements>
+    <intElements xsi:type="fm:Feature" name="Dinner" id="92" linksSrc="112" type="Task" refs="93">
+      <metadata name="_numEval" value="0"/>
+      <metadata name="_qualEval" value="None"/>
+    </intElements>
+    <intElements xsi:type="fm:Feature" name="Fast Food" id="100" linksSrc="111" type="Task" refs="101">
+      <metadata name="_numEval" value="0"/>
+      <metadata name="_qualEval" value="None"/>
+    </intElements>
+    <intElements xsi:type="fm:Feature" name="Cooked Food" id="102" linksSrc="109" type="Task" refs="103">
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+    </intElements>
+    <intElements xsi:type="fm:Feature" name="Drink" id="104" linksSrc="110" type="Task" refs="105">
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+    </intElements>
+    <intElements xsi:type="fm:Feature" name="Brunch" id="113" linksSrc="117" type="Task" refs="114">
+      <metadata name="_numEval" value="0"/>
+      <metadata name="_qualEval" value="None"/>
+    </intElements>
+    <intElements xsi:type="fm:Feature" name="Feature119" id="119" type="Task" refs="120">
+      <metadata name="_numEval" value="0"/>
+      <metadata name="_qualEval" value="None"/>
+    </intElements>
+    <intElements xsi:type="fm:Feature" name="Pay for Ticket" id="121" linksDest="139 153 141" linksSrc="149" type="Task" decompositionType="Xor" refs="122">
+      <metadata name="_addAggregate" value="disable"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+    </intElements>
+    <intElements xsi:type="fm:Feature" name="Get Train Info" id="123" linksDest="143 148 145" linksSrc="154" type="Task" decompositionType="Or" refs="124">
+      <metadata name="_addAggregate" value="disable"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+    </intElements>
+    <intElements xsi:type="fm:Feature" name="Online" id="125" linksSrc="139" type="Task" refs="126">
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+    </intElements>
+    <intElements xsi:type="fm:Feature" name="At Kiosk" id="127" linksSrc="153" type="Task" refs="128">
+      <metadata name="_numEval" value="0"/>
+      <metadata name="_qualEval" value="None"/>
+    </intElements>
+    <intElements xsi:type="fm:Feature" name="Machine" id="129" linksSrc="141" type="Task" refs="130">
+      <metadata name="_numEval" value="0"/>
+      <metadata name="_qualEval" value="None"/>
+    </intElements>
+    <intElements xsi:type="fm:Feature" name="Info Desk" id="131" linksSrc="143" type="Task" refs="132">
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+    </intElements>
+    <intElements xsi:type="fm:Feature" name="Monitor" id="133" linksSrc="148" type="Task" refs="134">
+      <metadata name="_numEval" value="0"/>
+      <metadata name="_qualEval" value="None"/>
+    </intElements>
+    <intElements xsi:type="fm:Feature" name="ViaRail App" id="135" linksSrc="145" type="Task" refs="136">
+      <metadata name="_numEval" value="0"/>
+      <metadata name="_qualEval" value="None"/>
+    </intElements>
+    <intElements xsi:type="fm:Feature" name="Pay for Items" id="137" linksSrc="155" type="Task" refs="138">
+      <metadata name="_addAggregate" value="disable"/>
+      <metadata name="_numEval" value="0"/>
+      <metadata name="_qualEval" value="None"/>
+    </intElements>
+    <intElements xsi:type="fm:Feature" name="ViaRail" id="160" linksSrc="167" type="Task" refs="161">
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+    </intElements>
+    <intElements xsi:type="fm:Feature" name="Metro" id="162" linksSrc="164" type="Task" refs="163">
+      <metadata name="_numEval" value="0"/>
+      <metadata name="_qualEval" value="None"/>
+    </intElements>
     <links xsi:type="grl:Decomposition" name="Decomposition67" id="67" refs="//@urndef/@specDiagrams.0/@connections.0" dest="49" src="39"/>
     <links xsi:type="grl:Decomposition" name="Decomposition68" id="68" refs="//@urndef/@specDiagrams.0/@connections.1" dest="49" src="43"/>
     <links xsi:type="grl:Decomposition" name="Decomposition70" id="70" refs="//@urndef/@specDiagrams.0/@connections.2" dest="49" src="47"/>
     <links xsi:type="grl:Decomposition" name="Decomposition71" id="71" refs="//@urndef/@specDiagrams.0/@connections.3" dest="51" src="53"/>
     <links xsi:type="grl:Decomposition" name="Decomposition74" id="74" refs="//@urndef/@specDiagrams.0/@connections.4" dest="49" src="45"/>
     <links xsi:type="grl:Decomposition" name="Decomposition75" id="75" refs="//@urndef/@specDiagrams.0/@connections.5" dest="51" src="55"/>
-    <links xsi:type="fm:MandatoryFMLink" name="Mandatory76" id="76" refs="//@urndef/@specDiagrams.0/@connections.6" dest="57" src="49"/>
-    <links xsi:type="fm:MandatoryFMLink" name="Mandatory77" id="77" refs="//@urndef/@specDiagrams.0/@connections.7" dest="57" src="51"/>
-    <links xsi:type="fm:MandatoryFMLink" name="Mandatory86" id="86" refs="//@urndef/@specDiagrams.0/@connections.8" dest="57" src="79"/>
+    <links xsi:type="fm:MandatoryFMLink" name="Mandatory76" id="76" refs="//@urndef/@specDiagrams.0/@connections.6" dest="57" src="49" quantitativeContribution="33"/>
+    <links xsi:type="fm:MandatoryFMLink" name="Mandatory77" id="77" refs="//@urndef/@specDiagrams.0/@connections.7" dest="57" src="51" quantitativeContribution="33"/>
+    <links xsi:type="fm:MandatoryFMLink" name="Mandatory86" id="86" refs="//@urndef/@specDiagrams.0/@connections.8" dest="57" src="79" quantitativeContribution="34"/>
     <links xsi:type="grl:Decomposition" name="Decomposition97" id="97" refs="//@urndef/@specDiagrams.0/@connections.9" dest="79" src="90"/>
     <links xsi:type="grl:Decomposition" name="Decomposition98" id="98" refs="//@urndef/@specDiagrams.0/@connections.10" dest="79" src="88"/>
     <links xsi:type="grl:Decomposition" name="Decomposition109" id="109" refs="//@urndef/@specDiagrams.0/@connections.11" dest="81" src="102"/>
@@ -60,18 +169,43 @@
     <links xsi:type="grl:Decomposition" name="Decomposition143" id="143" refs="//@urndef/@specDiagrams.0/@connections.18" dest="123" src="131"/>
     <links xsi:type="grl:Decomposition" name="Decomposition145" id="145" refs="//@urndef/@specDiagrams.0/@connections.19" dest="123" src="135"/>
     <links xsi:type="grl:Decomposition" name="Decomposition148" id="148" refs="//@urndef/@specDiagrams.0/@connections.20" dest="123" src="133"/>
-    <links xsi:type="fm:MandatoryFMLink" name="Mandatory149" id="149" refs="//@urndef/@specDiagrams.0/@connections.21" dest="59" src="121"/>
-    <links xsi:type="fm:OptionalFMLink" name="Optional151" id="151" refs="//@urndef/@specDiagrams.0/@connections.22" dest="57" src="81"/>
+    <links xsi:type="fm:MandatoryFMLink" name="Mandatory149" id="149" refs="//@urndef/@specDiagrams.0/@connections.21" dest="59" src="121" quantitativeContribution="100"/>
+    <links xsi:type="fm:OptionalFMLink" name="Optional151" id="151" refs="//@urndef/@specDiagrams.0/@connections.22" dest="57" src="81" quantitativeContribution="0"/>
     <links xsi:type="grl:Decomposition" name="Decomposition153" id="153" refs="//@urndef/@specDiagrams.0/@connections.23" dest="121" src="127"/>
-    <links xsi:type="fm:OptionalFMLink" name="Optional154" id="154" refs="//@urndef/@specDiagrams.0/@connections.24" dest="59" src="123"/>
-    <links xsi:type="fm:MandatoryFMLink" name="Mandatory155" id="155" refs="//@urndef/@specDiagrams.0/@connections.25" dest="61" src="137"/>
-    <links xsi:type="fm:OptionalFMLink" name="Optional156" id="156" refs="//@urndef/@specDiagrams.0/@connections.26" dest="63" src="59"/>
-    <links xsi:type="fm:OptionalFMLink" name="Optional157" id="157" refs="//@urndef/@specDiagrams.0/@connections.27" dest="63" src="61"/>
-    <links xsi:type="fm:OptionalFMLink" name="Optional158" id="158" refs="//@urndef/@specDiagrams.0/@connections.28" dest="63" src="57"/>
+    <links xsi:type="fm:OptionalFMLink" name="Optional154" id="154" refs="//@urndef/@specDiagrams.0/@connections.24" dest="59" src="123" quantitativeContribution="0"/>
+    <links xsi:type="fm:MandatoryFMLink" name="Mandatory155" id="155" refs="//@urndef/@specDiagrams.0/@connections.25" dest="61" src="137" quantitativeContribution="100"/>
+    <links xsi:type="fm:OptionalFMLink" name="Optional156" id="156" refs="//@urndef/@specDiagrams.0/@connections.26" dest="63" src="59" quantitativeContribution="100"/>
+    <links xsi:type="fm:OptionalFMLink" name="Optional157" id="157" refs="//@urndef/@specDiagrams.0/@connections.27" dest="63" src="61" quantitativeContribution="100"/>
+    <links xsi:type="fm:OptionalFMLink" name="Optional158" id="158" refs="//@urndef/@specDiagrams.0/@connections.28" dest="63" src="57" quantitativeContribution="100"/>
     <links xsi:type="grl:Decomposition" name="Decomposition164" id="164" refs="//@urndef/@specDiagrams.0/@connections.29" dest="59" src="162"/>
     <links xsi:type="grl:Decomposition" name="Decomposition167" id="167" refs="//@urndef/@specDiagrams.0/@connections.30" dest="59" src="160"/>
     <groups name="StrategiesGroup5" id="5" strategies="6"/>
-    <strategies name="EvaluationStrategy6" id="6" author="Romain-PC" group="5"/>
+    <strategies name="Traveler with Children" id="6" author="Romain-PC" group="5">
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="53">
+        <kpiEvalValueSet/>
+      </evaluations>
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="43">
+        <kpiEvalValueSet/>
+      </evaluations>
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="90">
+        <kpiEvalValueSet/>
+      </evaluations>
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="102">
+        <kpiEvalValueSet/>
+      </evaluations>
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="104">
+        <kpiEvalValueSet/>
+      </evaluations>
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="125">
+        <kpiEvalValueSet/>
+      </evaluations>
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="131">
+        <kpiEvalValueSet/>
+      </evaluations>
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="160">
+        <kpiEvalValueSet/>
+      </evaluations>
+    </strategies>
     <impactModel/>
     <indicatorGroup name="Time" id="9" isRedesignCategory="true"/>
     <indicatorGroup name="Cost" id="10" isRedesignCategory="true"/>
@@ -80,7 +214,7 @@
     <featureModel/>
   </grlspec>
   <urndef>
-    <specDiagrams xsi:type="fm:FeatureDiagram" name="FeatureDiagram4" id="4">
+    <specDiagrams xsi:type="fm:FeatureDiagram" name="System-as-is Feature Model" id="4">
       <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef40" id="40" x="243" y="587" succ="//@urndef/@specDiagrams.0/@connections.0" def="39">
         <metadata name="_height" value="82"/>
         <metadata name="_width" value="130"/>
@@ -264,7 +398,7 @@
       </connections>
       <connections xsi:type="grl:LinkRef" source="163" target="60" link="164"/>
       <connections xsi:type="grl:LinkRef" source="161" target="60" link="167"/>
-      <comments description="This system is from the point of view of the customer" x="1253" y="-4" width="197" height="88" fillColor="255,255,200"/>
+      <comments description="ECSE 326 - Software Requriements Engineering - Fall 2018&#xD;&#xA;Eliott Bourachot: Traveler with Children&#xD;&#xA;Susan : Restaurant Customer&#xD;&#xA;Pierre Robert-Michon: Frequent Via Rail Traveler&#xD;&#xA;Paul Seimandi: Tourist&#xD;&#xA;Albert Kragl: Businessperson&#xD;&#xA;Romain Couperier: Commuting Student" x="1636" y="103" width="362" height="133" fillColor="255,255,200"/>
     </specDiagrams>
   </urndef>
   <metadata name="_Use0to100EvaluationRange" value="false"/>
